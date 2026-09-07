@@ -1,5 +1,5 @@
-output "rendered_template" {
-  value = data.template_file.test.rendered
+output "template_result" {
+  value = local.template_result
 }
 
 output "external_test" {

@@ -1,11 +1,13 @@
 variable "sample_var" {
-  description = "A sample var to pass to the template."
-  default     = "hello"
+  description = "Sample template variable"
+  type        = string
+  default     = "schematics-test"
 }
 
 variable "sleepy_time" {
-  description = "How long the local-exec will sleep in seconds."
-  default     = 0
+  description = "Sleep duration in seconds"
+  type        = number
+  default     = 5
 }
 
 variable "release_version" {
